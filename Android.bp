@@ -1,0 +1,14 @@
+// Copyright (C) 2026 The OpenIntelligenceRuntime Project
+// Licensed under the Apache License, Version 2.0
+
+package {
+    default_applicable_licenses: ["Android-Apache-2.0"],
+}
+
+prebuilt_etc {
+    name: "oir_default_model",
+    src: "models/qwen2.5-0.5b-instruct-q4_k_m.gguf",
+    sub_dir: "oir",
+    product_specific: true,
+    filename_from_src: true,
+}

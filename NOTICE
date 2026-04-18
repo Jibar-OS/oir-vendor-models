@@ -1,0 +1,7 @@
+This repository bundles Apache 2.0 / MIT licensed model prebuilts for
+OpenIntelligenceRuntime (OIR).
+
+Qwen 2.5 0.5B Instruct (Q4_K_M GGUF)
+  Upstream:  https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF
+  License:   Apache License 2.0
+  Copyright: (c) 2024 Alibaba Cloud
