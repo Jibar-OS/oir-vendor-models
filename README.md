@@ -50,7 +50,7 @@ The reference Cuttlefish device tree ([`device_google_cuttlefish`](https://githu
 
 ## See also
 
-[`github.com/Jibar-OS/jibar-os`](https://github.com/Jibar-OS/jibar-os) — why we bundle what we bundle + OEM bake-in guide.
+[`github.com/Jibar-OS/JibarOS`](https://github.com/Jibar-OS/JibarOS) — why we bundle what we bundle + OEM bake-in guide.
 
 ## Migration status
 
