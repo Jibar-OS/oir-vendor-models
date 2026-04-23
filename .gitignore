@@ -1,0 +1,5 @@
+models/*.gguf
+models/*.onnx
+models/*.bin
+models/*.wav
+# All model binaries excluded; use tools/fetch-models.sh to populate.
