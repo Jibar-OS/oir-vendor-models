@@ -1,5 +1,6 @@
+# Model binaries excluded by default; tools/fetch-models.sh populates them.
+# voice-sample.wav is the exception — small (720 KB), CC0-licensed, ships in-tree
+# so the AOSP build always finds it without a fetch step.
 models/*.gguf
 models/*.onnx
 models/*.bin
-models/*.wav
-# All model binaries excluded; use tools/fetch-models.sh to populate.
