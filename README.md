@@ -52,6 +52,3 @@ The reference Cuttlefish device tree ([`device_google_cuttlefish`](https://githu
 
 [`github.com/Jibar-OS/JibarOS`](https://github.com/Jibar-OS/JibarOS) — why we bundle what we bundle + OEM bake-in guide.
 
-## Migration status
-
-🚧 Repo migration from `rufolangus/oir_vendor_models` in progress. Model binaries will be re-uploaded via Git LFS to the `jibar-os` org.
