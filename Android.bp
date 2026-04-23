@@ -12,3 +12,39 @@ prebuilt_etc {
     product_specific: true,
     filename_from_src: true,
 }
+
+prebuilt_etc {
+    name: "oir_minilm_model",
+    src: "models/all-MiniLM-L6-v2.Q8_0.gguf",
+    sub_dir: "oir",
+    product_specific: true,
+    filename_from_src: true,
+}
+
+prebuilt_etc {
+    name: "oir_whisper_tiny_en_model",
+    src: "models/whisper-tiny-en.Q5.bin",
+    sub_dir: "oir",
+    product_specific: true,
+    filename_from_src: true,
+}
+
+prebuilt_etc {
+    name: "oir_siglip_model",
+    src: "models/siglip-base-patch16-224.onnx",
+    sub_dir: "oir",
+    product_specific: true,
+    filename_from_src: true,
+}
+
+// v0.6.9: 16 kHz / 16-bit / mono reference WAV for OirDemo's
+// audio.transcribe tile. Short (~5s of English speech, PCM, ~720 KB).
+// whisper-tiny-en + this WAV gives a runnable audio.transcribe demo
+// from a clean cvd boot without manual `adb push` of a voice asset.
+prebuilt_etc {
+    name: "oir_voice_sample_wav",
+    src: "models/voice-sample.wav",
+    sub_dir: "oir",
+    product_specific: true,
+    filename_from_src: true,
+}
