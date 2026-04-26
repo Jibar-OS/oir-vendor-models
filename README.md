@@ -1,6 +1,6 @@
 # oir-vendor-models — permissively-licensed model bundle
 
-Git-LFS repository of the baseline models that ship in a reference JibarOS build. Installs to `/product/etc/oir/` via `prebuilt_etc` in `Android.bp`.
+Reference baseline models that ship with a JibarOS Cuttlefish build. Model binaries are downloaded by `tools/fetch-models.sh` from canonical upstream homes (HuggingFace), not vendored as Git LFS — keeps the repo lightweight. Installs to `/product/etc/oir/` via `prebuilt_etc` in `Android.bp`.
 
 ## What's included
 
@@ -9,7 +9,6 @@ Git-LFS repository of the baseline models that ship in a reference JibarOS build
 | `qwen2.5-0.5b-instruct-q4_k_m.gguf` | `text.complete` / `text.translate` | Apache 2.0 | ~470 MB |
 | `all-MiniLM-L6-v2.Q8_0.gguf` | `text.embed` | Apache 2.0 | ~24 MB |
 | `whisper-tiny-en.Q5.bin` | `audio.transcribe` | MIT | ~31 MB |
-| `siglip-base-patch16-224.onnx` | `vision.embed` | Apache 2.0 | ~372 MB |
 | `voice-sample.wav` | OirDemo `audio.transcribe` demo input | CC0 (sonic/talking.wav resampled) | ~720 KB |
 
 See [`NOTICE`](./NOTICE) for full attribution.
@@ -23,6 +22,7 @@ These capabilities are declared in `capabilities.xml` with no platform default �
 | `vision.describe` | VLMs are typically >500 MB; OEMs pick size/perf tradeoff (SmolVLM-500M to LLaVA-7B) |
 | `vision.detect` | YOLO family is AGPL; OEMs accept obligations or pick RT-DETR (Apache) |
 | `audio.synthesize` | Piper voices need locale-specific G2P sidecars; no universal default |
+| `vision.embed` | siglip-base-patch16-224 is declared in `Android.bp` for OEMs who want to opt in (`PRODUCT_PACKAGES += oir_siglip_model`); not installed by default — ~372 MB is more than the platform-default story warrants |
 
 ## Git LFS
 
