@@ -25,6 +25,7 @@ MANIFEST=(
     "qwen2.5-0.5b-instruct-q4_k_m.gguf|https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF/resolve/main/qwen2.5-0.5b-instruct-q4_k_m.gguf|74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db|Apache-2.0"
     "all-MiniLM-L6-v2.Q8_0.gguf|https://huggingface.co/leliuga/all-MiniLM-L6-v2-GGUF/resolve/main/all-MiniLM-L6-v2.Q8_0.gguf|e5ec722e8c82dc4ffaf965175ca472f5da3f97b695590b5b0780bdbfa29bcaf3|Apache-2.0"
     "whisper-tiny-en.Q5.bin|https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-tiny.en-q5_1.bin|c77c5766f1cef09b6b7d47f21b546cbddd4157886b3b5d6d4f709e91e66c7c2b|MIT"
+    "siglip-base-patch16-224.onnx|https://huggingface.co/Xenova/siglip-base-patch16-224/resolve/main/onnx/vision_model.onnx|f89d41bac7f4d4b87e010a467d93f98689d708916ed22f5a07f96fdfa26f475f|Apache-2.0"
 )
 
 fetch_one() {
