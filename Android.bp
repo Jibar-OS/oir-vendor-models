@@ -50,6 +50,14 @@ prebuilt_etc {
 // whisper-tiny-en + this WAV gives a runnable audio.transcribe demo
 // from a clean cvd boot without manual `adb push` of a voice asset.
 prebuilt_etc {
+    name: "oir_bus_jpg",
+    src: "models/bus.jpg",
+    sub_dir: "oir",
+    product_specific: true,
+    filename_from_src: true,
+}
+
+prebuilt_etc {
     name: "oir_voice_sample_wav",
     src: "models/voice-sample.wav",
     sub_dir: "oir",
