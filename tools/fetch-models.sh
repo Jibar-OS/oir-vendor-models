@@ -26,6 +26,7 @@ MANIFEST=(
     "all-MiniLM-L6-v2.Q8_0.gguf|https://huggingface.co/leliuga/all-MiniLM-L6-v2-GGUF/resolve/main/all-MiniLM-L6-v2.Q8_0.gguf|e5ec722e8c82dc4ffaf965175ca472f5da3f97b695590b5b0780bdbfa29bcaf3|Apache-2.0"
     "whisper-tiny-en.Q5.bin|https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-tiny.en-q5_1.bin|c77c5766f1cef09b6b7d47f21b546cbddd4157886b3b5d6d4f709e91e66c7c2b|MIT"
     "siglip-base-patch16-224.onnx|https://huggingface.co/Xenova/siglip-base-patch16-224/resolve/main/onnx/vision_model.onnx|f89d41bac7f4d4b87e010a467d93f98689d708916ed22f5a07f96fdfa26f475f|Apache-2.0"
+    "rtdetr-r50vd-coco.onnx|https://huggingface.co/onnx-community/rtdetr_r50vd_coco_o365/resolve/main/onnx/model_fp16.onnx|a8e6536d749e30b56f4d56c78bc30c2b991425edbccce414cc4aa60505d3a0df|Apache-2.0"
 )
 
 fetch_one() {
